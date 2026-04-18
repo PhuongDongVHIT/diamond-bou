@@ -1,0 +1,73 @@
+{
+  "version": "0.6",
+  "reqId": "0",
+  "status": "ok",
+  "sig": "691536870",
+  "table": {
+    "cols": [
+      {
+        "id": "A",
+        "label": "Timestamp",
+        "type": "string"
+      },
+      {
+        "id": "B",
+        "label": "HỌ VÀ TÊN",
+        "type": "string"
+      },
+      {
+        "id": "C",
+        "label": "ĐƠN VỊ PHÂN PHỐI",
+        "type": "string"
+      },
+      {
+        "id": "D",
+        "label": "LINK VIDEO CLIP BẠN ĐÃ ĐĂNG TẢI TRÊN TIKTOK",
+        "type": "string"
+      },
+      {
+        "id": "E",
+        "label": "NGÂN HÀNG",
+        "type": "string"
+      },
+      {
+        "id": "F",
+        "label": "SỐ TÀI KHOẢN",
+        "type": "number",
+        "pattern": "General"
+      },
+      {
+        "id": "G",
+        "label": "CHI NHÁNH",
+        "type": "string"
+      }
+    ],
+    "rows": [
+      {
+        "c": [
+          null,
+          {
+            "v": "Tester"
+          },
+          {
+            "v": "DXMDVietnam"
+          },
+          {
+            "v": "https://www.tiktok.com/@xuanhienluxehome/video/7623707126023638292"
+          },
+          {
+            "v": "BIDV"
+          },
+          {
+            "v": 0,
+            "f": "0"
+          },
+          {
+            "v": "DXMDVietnam"
+          }
+        ]
+      }
+    ],
+    "parsedNumHeaders": 1
+  }
+}
