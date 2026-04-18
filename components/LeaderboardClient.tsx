@@ -134,22 +134,22 @@ export default function LeaderboardClient({ initialList }: { initialList: Tiktok
             <div 
               key={entry.url} 
               className={`flex flex-wrap md:grid md:grid-cols-12 gap-2 sm:gap-4 items-center p-4 rounded-2xl transition-all duration-300 border ${
-                entry.rank === 1 ? 'bg-gradient-to-r from-yellow-50 to-amber-50 border-yellow-200/60 shadow-sm' :
-                entry.rank === 2 ? 'bg-gradient-to-r from-slate-50 to-gray-100 border-gray-200/60 shadow-sm' :
-                entry.rank === 3 ? 'bg-gradient-to-r from-orange-50 to-rose-50 border-orange-200/60 shadow-sm' :
-                'bg-white border-gray-50 hover:bg-gray-50 hover:border-gray-100'
+                entry.rank === 1 ? 'bg-gradient-to-r from-yellow-100 to-yellow-50 border-yellow-400 shadow-md shadow-yellow-100' :
+                entry.rank === 2 ? 'bg-gradient-to-r from-slate-100 to-slate-50 border-slate-300 shadow-md shadow-slate-100' :
+                entry.rank === 3 ? 'bg-gradient-to-r from-orange-100 to-orange-50 border-orange-300 shadow-md shadow-orange-100' :
+                'bg-white border-gray-100 hover:bg-gray-50 hover:border-gray-200 shadow-sm'
               }`}
             >
               {/* Rank */}
               <div className="w-full md:w-auto md:col-span-1 flex justify-between md:justify-center items-center mb-2 md:mb-0">
                 <span className="md:hidden text-xs font-bold text-gray-400">HẠNG:</span>
-                <div className={`w-10 h-10 rounded-full flex items-center justify-center font-black text-lg shadow-sm ${
-                  entry.rank === 1 ? 'bg-gradient-to-br from-yellow-400 to-amber-600 text-white shadow-yellow-500/30' :
-                  entry.rank === 2 ? 'bg-gradient-to-br from-slate-300 to-gray-500 text-white shadow-gray-500/30' :
-                  entry.rank === 3 ? 'bg-gradient-to-br from-orange-400 to-rose-500 text-white shadow-orange-500/30' :
-                  'bg-gray-100 text-gray-500'
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center font-black text-xl shadow-lg border-2 ${
+                  entry.rank === 1 ? 'bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600 text-white border-yellow-200 shadow-yellow-400/40 transform scale-110' :
+                  entry.rank === 2 ? 'bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500 text-white border-slate-200 shadow-slate-400/40' :
+                  entry.rank === 3 ? 'bg-gradient-to-br from-orange-300 via-orange-400 to-orange-600 text-white border-orange-200 shadow-orange-400/40' :
+                  'bg-gray-100 text-gray-500 border-gray-200'
                 }`}>
-                  {entry.rank}
+                  {entry.rank === 1 ? '🥇' : entry.rank === 2 ? '🥈' : entry.rank === 3 ? '🥉' : entry.rank}
                 </div>
               </div>
 
