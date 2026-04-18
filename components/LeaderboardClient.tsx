@@ -177,37 +177,37 @@ export default function LeaderboardClient({ initialList }: { initialList: Tiktok
               </div>
 
               {/* Interaction Params */}
-              <div className="w-full md:w-auto md:col-span-5 flex flex-wrap justify-between md:justify-center gap-2 sm:gap-4 my-2 md:my-0">
+              <div className="w-full md:w-auto md:col-span-5 grid grid-cols-5 md:flex md:flex-wrap md:justify-center gap-1 sm:gap-2 md:gap-4 my-3 md:my-0">
                 {entry.status === 'idle' || entry.status === 'loading' ? (
-                  <div className="flex w-full items-center justify-center text-gray-400 gap-2 h-12">
+                  <div className="col-span-5 flex w-full items-center justify-center text-gray-400 gap-2 h-12">
                     <svg className="animate-spin h-5 w-5 text-purple-500" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
                     <span className="text-sm font-medium animate-pulse">Đang nạp...</span>
                   </div>
                 ) : entry.status === 'error' ? (
-                  <div className="w-full text-center flex items-center justify-center h-12">
+                  <div className="col-span-5 w-full text-center flex items-center justify-center h-12">
                     <span className="text-xs text-red-500 font-medium bg-red-50 px-3 py-1 rounded-full border border-red-100">Bị Lỗi/Quá Tải</span>
                   </div>
                 ) : (
                   <>
-                    <div className="flex flex-col items-center p-2 bg-gray-50 rounded-xl min-w-[3rem]" title="Lượt Xem (Views)">
-                      <span className="text-lg leading-none">👁️</span>
-                      <span className="text-xs font-black text-slate-700 mt-1">{formatNumberCompact(entry.views)}</span>
+                    <div className="flex flex-col items-center justify-center py-2 px-1 bg-gray-50 rounded-xl" title="Lượt Xem (Views)">
+                      <span className="text-base sm:text-lg leading-none">👁️</span>
+                      <span className="text-[10px] sm:text-xs font-black text-slate-700 mt-1 truncate w-full text-center">{formatNumberCompact(entry.views)}</span>
                     </div>
-                    <div className="flex flex-col items-center p-2 bg-rose-50 rounded-xl min-w-[3rem]" title="Lượt Tim (Likes)">
-                      <span className="text-lg leading-none">❤️</span>
-                      <span className="text-xs font-black text-rose-600 mt-1">{formatNumberCompact(entry.likes)}</span>
+                    <div className="flex flex-col items-center justify-center py-2 px-1 bg-rose-50 rounded-xl" title="Lượt Tim (Likes)">
+                      <span className="text-base sm:text-lg leading-none">❤️</span>
+                      <span className="text-[10px] sm:text-xs font-black text-rose-600 mt-1 truncate w-full text-center">{formatNumberCompact(entry.likes)}</span>
                     </div>
-                    <div className="flex flex-col items-center p-2 bg-blue-50 rounded-xl min-w-[3rem]" title="Bình luận (Comments)">
-                      <span className="text-lg leading-none">💬</span>
-                      <span className="text-xs font-black text-blue-600 mt-1">{formatNumberCompact(entry.comments)}</span>
+                    <div className="flex flex-col items-center justify-center py-2 px-1 bg-blue-50 rounded-xl" title="Bình luận (Comments)">
+                      <span className="text-base sm:text-lg leading-none">💬</span>
+                      <span className="text-[10px] sm:text-xs font-black text-blue-600 mt-1 truncate w-full text-center">{formatNumberCompact(entry.comments)}</span>
                     </div>
-                    <div className="flex flex-col items-center p-2 bg-emerald-50 rounded-xl min-w-[3rem]" title="Lưu lại (Saves)">
-                      <span className="text-lg leading-none">🔖</span>
-                      <span className="text-xs font-black text-emerald-600 mt-1">{formatNumberCompact(entry.saves)}</span>
+                    <div className="flex flex-col items-center justify-center py-2 px-1 bg-emerald-50 rounded-xl" title="Lưu lại (Saves)">
+                      <span className="text-base sm:text-lg leading-none">🔖</span>
+                      <span className="text-[10px] sm:text-xs font-black text-emerald-600 mt-1 truncate w-full text-center">{formatNumberCompact(entry.saves)}</span>
                     </div>
-                    <div className="flex flex-col items-center p-2 bg-purple-50 rounded-xl min-w-[3rem]" title="Chia sẻ (Shares)">
-                      <span className="text-lg leading-none">🔁</span>
-                      <span className="text-xs font-black text-purple-600 mt-1">{formatNumberCompact(entry.shares)}</span>
+                    <div className="flex flex-col items-center justify-center py-2 px-1 bg-purple-50 rounded-xl" title="Chia sẻ (Shares)">
+                      <span className="text-base sm:text-lg leading-none">🔁</span>
+                      <span className="text-[10px] sm:text-xs font-black text-purple-600 mt-1 truncate w-full text-center">{formatNumberCompact(entry.shares)}</span>
                     </div>
                   </>
                 )}
