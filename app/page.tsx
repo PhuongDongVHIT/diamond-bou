@@ -27,7 +27,7 @@ export default async function Home() {
             </h1>
             <p className="text-slate-600 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-6">
               Sân chơi dành cho những <span className="font-bold text-amber-500">“gương mặt vàng”</span> của chiến trường sales chính thức khởi động!
-              Bạn đã sẵn sàng lên sóng – lên tầm – lên vị thế và trở thành Đại sứ thương hiệu <span className="font-bold text-blue-600">Diamond Boulevard</span> ❓🚀
+              Bạn đã sẵn sàng lên sóng – lên tầm – lên vị thế và trở thành Đại sứ thương hiệu <span className="font-bold text-blue-600">Diamond Boulevard</span>
             </p>
           </div>
 
