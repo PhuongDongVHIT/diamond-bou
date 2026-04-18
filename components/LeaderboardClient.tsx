@@ -137,6 +137,8 @@ export default function LeaderboardClient({ initialList }: { initialList: Tiktok
                 entry.rank === 1 ? 'bg-gradient-to-r from-yellow-100 to-yellow-50 border-yellow-400 shadow-md shadow-yellow-100' :
                 entry.rank === 2 ? 'bg-gradient-to-r from-slate-100 to-slate-50 border-slate-300 shadow-md shadow-slate-100' :
                 entry.rank === 3 ? 'bg-gradient-to-r from-orange-100 to-orange-50 border-orange-300 shadow-md shadow-orange-100' :
+                entry.rank === 4 ? 'bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200 shadow-sm shadow-blue-100' :
+                entry.rank === 5 ? 'bg-gradient-to-r from-emerald-50 to-teal-50 border-emerald-200 shadow-sm shadow-emerald-100' :
                 'bg-white border-gray-100 hover:bg-gray-50 hover:border-gray-200 shadow-sm'
               }`}
             >
@@ -147,7 +149,9 @@ export default function LeaderboardClient({ initialList }: { initialList: Tiktok
                   entry.rank === 1 ? 'bg-gradient-to-br from-yellow-300 via-yellow-400 to-yellow-600 text-white border-yellow-200 shadow-yellow-400/40 transform scale-110' :
                   entry.rank === 2 ? 'bg-gradient-to-br from-slate-300 via-slate-400 to-slate-500 text-white border-slate-200 shadow-slate-400/40' :
                   entry.rank === 3 ? 'bg-gradient-to-br from-orange-300 via-orange-400 to-orange-600 text-white border-orange-200 shadow-orange-400/40' :
-                  'bg-gray-100 text-gray-500 border-gray-200'
+                  entry.rank === 4 ? 'bg-gradient-to-br from-blue-300 via-blue-400 to-indigo-500 text-white border-blue-200 shadow-blue-400/30' :
+                  entry.rank === 5 ? 'bg-gradient-to-br from-emerald-300 via-emerald-400 to-teal-500 text-white border-emerald-200 shadow-emerald-400/30' :
+                  'bg-gray-50 text-gray-400 border-gray-200 shadow-none'
                 }`}>
                   {entry.rank === 1 ? '🥇' : entry.rank === 2 ? '🥈' : entry.rank === 3 ? '🥉' : entry.rank}
                 </div>
