@@ -26,21 +26,20 @@ export default async function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500">Đại Sứ Kim Cương</span>
             </h1>
             <p className="text-slate-600 text-lg md:text-xl font-medium max-w-2xl mx-auto mb-6">
-              Sân chơi dành cho những <span className="font-bold text-amber-500">“gương mặt vàng”</span> của chiến trường sales chính thức khởi động! 
+              Sân chơi dành cho những <span className="font-bold text-amber-500">“gương mặt vàng”</span> của chiến trường sales chính thức khởi động!
               Bạn đã sẵn sàng lên sóng – lên tầm – lên vị thế và trở thành Đại sứ thương hiệu <span className="font-bold text-blue-600">Diamond Boulevard</span> ❓🚀
             </p>
-            <Link href="/clear-cache" className="text-sm text-slate-400 hover:text-slate-600 underline">Quản lý Cache Upstash</Link>
           </div>
 
           <LeaderboardClient initialList={initialList} />
         </div>
-        
+
         {/* Vẫn giữ lại Social Checker ở dưới cuối trang */}
         <div className="mt-12 pt-12 border-t border-slate-200">
-           <div className="text-center mb-8">
-             <h2 className="text-2xl font-bold text-slate-800">Trình kiểm tra thủ công</h2>
-           </div>
-           <SocialChecker />
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-slate-800">Trình kiểm tra thủ công</h2>
+          </div>
+          <SocialChecker />
         </div>
       </main>
     </div>
